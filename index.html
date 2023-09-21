@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gigee-Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Start of Navbar-->
+    <header>
+        <div class="logo"><h1>Gigee Restruant</h1></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="login"><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- Navbar -->
+
+    <!--Start of Headline-->
+    <section class="headline-section">
+        <div class="background-image"></div>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Welcome to Gigee Restruant</h1>
+            <p>Quality products for better health</p>           
+        </div>
+    </section>
+    <!--End of Headline-->
+
+ <!--start of products-->
+ <center><h1 class="product-name">Products offered</h1></center>
+    
+ <section class="product-category">    
+    <div class="product-a">
+        <img src="img/food/download 3.jpeg" alt="Product 1" height="500">
+        <h3>Coastal Maandazi</h3>
+        <p>$1.99</p>
+        <button class="buy-button" onclick="showProductDetails('Coastal Maandazi', '$1.99',)">Buy Now</button>
+    </div>
+    <div class="product-b">
+        <img src="img/food/download 2.jpeg" alt="Product 1">
+        <h3>Mahamri</h3>
+        <p>$1.29</p>
+        <button class="buy-button" onclick="showProductDetails('Mahamri', '$1.29')">Buy Now</button>
+    </div>
+    <div class="product-c">
+        <img src="img/food/tea.jpeg" alt="Product 1">
+        <h3>Tea</h3>
+        <p>$1.89</p>
+        <button class="buy-button" onclick="showProductDetails('Tea', '$1.89')">Buy Now</button>
+    </div>
+    <div class="product-d">
+        <img src="img/food/ugali.jpeg" alt="Product 1">
+        <h3>Ugali</h3>
+        <p>$2.49</p>
+        <button class="buy-button" onclick="showProductDetails('Ugali', '$2.49')">Buy Now</button>
+    </div>
+    <div class="product-e">
+        <img src="img/food/pilau.jpeg" alt="Product 1">
+        <h3>Pilau</h3>
+        <p>$3.59</p>
+        <button class="buy-button" onclick="showProductDetails('Pilau', '$3.59')">Buy Now</button>
+    </div>
+    <br>
+    <div class="product-f">
+        <img src="img/food/kuku.jpeg" alt="Product 1">
+        <h3>Chicken Fry</h3>
+        <p>$4.89</p>
+        <button class="buy-button" onclick="showProductDetails('Chicken Fry', '$4.89')">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="img/food/githeri.jpg" alt="Product 1">
+        <h3>Githeri</h3>
+        <p>$6.99</p>
+        <button class="buy-button" onclick="showProductDetails('Githeri', '$6.99')">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="img/food/avocado.jpeg" alt="Product 1">
+        <h3>Avocado</h3>
+        <p>$1.39</p>
+        <button class="buy-button" onclick="showProductDetails('Avocado', '$1.39')">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="img/food/dengu.jpeg" alt="Product 1">
+        <h3>Dengu</h3>
+        <p>$2</p>
+        <button class="buy-button" onclick="showProductDetails('Dengu', '$2')">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="img/food/sausage.jpeg" alt="Product 1">
+        <h3>Sausage</h3>
+        <p>$1.29</p>
+        <button class="buy-button" onclick="showProductDetails('Product 1', '$50')">Buy Now</button>
+    </div>
+    
+    <div class="product">
+        <img src="img/food/bhajia.jpeg" alt="Product 1">
+        <h3>Bhajia</h3>
+        <p>$5</p>
+        <button class="buy-button" onclick="showProductDetails('Bhajia', '$5')">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="img/food/omena.jpeg" alt="Product 1">
+        <h3>Omena</h3>
+        <p>$2.99</p>
+        <button class="buy-button" onclick="showProductDetails('Omena', '$2.99')">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="img/food/vegetables.jpeg" alt="Product 1">
+        <h3>Vegetables</h3>
+        <p>$5.99</p>
+        <button class="buy-button" onclick="showProductDetails('Vegetables', '$5.99')">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="img/food/pizza.jpeg" alt="Product 1">
+        <h3>Pizza</h3>
+        <p>$12</p>
+        <button class="buy-button" onclick="showProductDetails('Pizza', '$12')">Buy Now</button>
+    </div>
+    <div class="product">
+        <img src="img/food/fish.jpeg" alt="Product 2">
+        <h3>Samaki</h3>
+        <p>$6.99</p>
+        <button class="buy-button" onclick="showProductDetails('Samaki', '$6.99')">Buy Now</button>
+    </div>    
+</section>
+<div class="popup-background"></div>
+<div class="product-details-popup">
+    <div class="popup-content">
+        <h2 id="popup-product-name">Product Name</h2>
+        <p id="popup-product-price">$0.00</p>
+        <button class="close-popup" onclick="closeProductDetails()">Close</button>
+    </div>
+</div>
+
+  <!--end of products-->
+
+  <!--Start of Side by side-->
+  <section class="side-by-side-section">
+    <div class="part part-1">
+        <h2>How to make eggs scrambled</h2>
+        <p>follow the tutorial. Don't forget to share and Subscribe</p>
+    </div>
+    <div class="part part-2">
+        <video controls>
+            <source src="img/video/tomp3.cc - Linux Tips  Install Full Kali on a USB Drive 2022_1080pFHR.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+<!--Start of Side by side-->
+
+
+
+ <!--start of footer-->
+  <footer class="translucent-bg">
+    <div class="section section-1">
+        <h3>Address</h3>
+        <p>Nairobi, Kenya</p>
+        <h3>Contact</h3>
+        <p>Phone: (+254)743554294<br>Email: info@gigeerestruant.com</p>
+        
+    </div>
+    
+    <div class="section section-2">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Book Space</a></li>
+            <li><a href="#">Order Products</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    
+    <div class="section section-3">
+        <h3>Follow Us on our socials</h3>
+        <ul class="social-icons">
+            <li><a href="#"><img src="img/Social Media Icons/facebook.png" alt="Facebook">@Gigee restruant</a></li>            
+            <li><a href="#"><img src="img/Social Media Icons/instagram.png" alt="Instagram">Gigee_restruant</a></li>
+            <li><a href="#"><img src="img/Social Media Icons/youtube.png" alt="Youtube">Gigee restruant</a></li>
+        </ul>
+    </div>
+    
+    <div class="section section-4">
+        <p style="font-family: 'Times New Roman', Times, serif;">&copy; 2023 Gigee restruant</p>
+    </div>
+</footer>
+<!--End of Footer-->
+
+</body>
+<script src="js/productpopup.js"></script>
+<script src="js/loginpopup.js"></script>
+
+</html>

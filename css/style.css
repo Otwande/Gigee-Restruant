@@ -1,0 +1,397 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*navbar*/
+header {
+    background: rgba(209, 241, 145, 0.811); /* Translucent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    backdrop-filter: blur(10px); /* Glass effect */
+}
+
+.logo {
+    background: rgb(125,69,160);
+    background: linear-gradient(90deg, rgb(92, 104, 118) 54%, rgb(177, 163, 143) 88%);
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.logo h1 {
+    font-family: 'Lucida Calligraphy', cursive;
+    font-size: 24px; /* Adjust the font size as needed */
+    display: inline;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; /* Set text color to transparent */
+    background: linear-gradient(90deg, rgb(16, 16, 15) 54%, rgb(67, 81, 69) 88%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: 0.3s;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bolder;
+   
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+.login .dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 5px;
+    top: 30px;
+}
+
+.login:hover .dropdown {
+    display: block;
+}
+
+/*end of header*/
+
+/*login popup*/
+.open-popup{
+    padding: 20px;
+    background-color: #9a3535;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: white;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(143, 97, 97, 0.5);
+    backdrop-filter: blur(3px); /* Add a glass-like effect */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: #9a3535;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    height: 40%;
+    box-shadow: 0px 0px 10px rgba(66, 37, 37, 0.1);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #1e6bbe;
+    color: #fff;
+    padding: 20px 20px;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+
+
+
+  /*start of headline*/
+  .headline-section {
+    position: relative;
+    height: 750px;
+    color: #fff;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-img/pexels-jane-doan-1099680.jpg"); 
+    background-size: cover;
+    filter: blur(0.1px); /*blur effect intensity */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent grey overlay intensity */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 24px;
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+  /*start of headline*/
+
+  /*product category*/
+  .product-category {
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 20px 0;
+}
+
+.product {
+    width: 200px;
+    margin-bottom: 20px 20px 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+
+
+.product img {
+    max-width: 90%;
+    height: auto;
+    border: 1px solid #ccc; /* Optional border around the image */
+    border-radius: 5px;
+}
+
+.product-a img {
+    max-width: 80%;
+    height: 50%;
+    border: 1px solid #ccc; /* Optional border around the image */
+    border-radius: 5px;
+}
+
+.product-b img {
+    max-width: 98%;
+    height: 50%;
+    border: 1px solid #ccc; /* Optional border around the image */
+    border-radius: 5px;
+}
+
+.product-c img {
+    max-width: 98%;
+    height: 50%;
+    border: 1px solid #ccc; /* Optional border around the image */
+    border-radius: 5px;
+}
+
+.product-d img {
+    max-width: 98%;
+    height: 50%;
+    border: 1px solid #ccc; /* Optional border around the image */
+    border-radius: 5px;
+}
+
+.product-f img {
+    max-width: 98%;
+    height: 50%;
+    border: 1px solid #ccc; /* Optional border around the image */
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buy-button {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.product-details-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+    z-index: 1;
+}
+
+.popup-content button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    display: none;
+    z-index: 0;
+}
+  /*End of product category*/
+
+  /*start of side by side*/
+  .side-by-side-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../img/bg-img/pexels-chan-walrus-958545.jpg"); /* Replace with your background image */
+    background-size: cover;
+    color: #fff;
+}
+
+.part {
+    flex: 1;
+    padding: 20px;
+    opacity: 0.9; /* Adjust opacity as needed */
+}
+
+.part-1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.part-2 {
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+}
+
+  /*end of side by side*/
+
+  /*footer*/
+  .translucent-bg {
+    background: rgba(209, 241, 145, 0.811); /* Translucent background */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    flex: 1;
+    margin: 0 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    
+}
+
+.section section-2 a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+  /*end of footer*/
